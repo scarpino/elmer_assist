@@ -102,7 +102,7 @@ method(chat_request, ProviderOpenAI) <- function(provider,
                                                  extra_args = list()) {
 
   req <- request(provider@base_url)
-  req <- req_url_path_append(req, "/chat/completions")
+  req <- req_url_path_append(req, "/assistants")
   req <- req_auth_bearer_token(req, provider@api_key)
   req <- req_retry(req, max_tries = 2)
   req <- req_error(req, body = function(resp) {
