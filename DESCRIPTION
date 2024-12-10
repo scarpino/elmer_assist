@@ -1,4 +1,4 @@
-Package: elmer_assist
+Package: elmerassist
 Title: Call LLM APIs from R
 Version: 0.0.0.1000
 Authors@R: c(
